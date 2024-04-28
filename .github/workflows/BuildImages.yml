@@ -49,7 +49,7 @@ jobs:
     steps:
       - name: Build image
         id: build
-        uses: mainsail-crew/MainsailOS-actions/build-image@master
+        uses: mainsail-crew/MainsailOS/.github/actions/build@master
         with:
           config: ${{ matrix.config }}
 
