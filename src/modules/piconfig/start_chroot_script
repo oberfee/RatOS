@@ -67,7 +67,7 @@ check_install_pkgs i2c-tools
 echo_green "Disabling Bluetooth related services..."
 systemctl_if_exists disable hciuart.service
 systemctl_if_exists disable bluetooth.service
-systemctl_if_exists disable bluealsa.service
+# systemctl_if_exists disable bluealsa.service # Failure on Bookworm
 
 
 # Step 11: Increase swapfile size
